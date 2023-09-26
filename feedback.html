@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Readings from Midgard :: Feedback</title>
+    <link rel="icon" href="images/icon.png" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Readings from Midgard, a website full of information designed to give readers an accurate glimpse into Norse mythology.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navcontain">
+        <header>
+            <a href="index.html">
+                <img src="images/title.png" alt="Readings from Midgard" />
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="locations.html">Locations</a>
+                    <ul>
+                        <li><a href="locations/yggdrasil.html">Yggdrasil</a></li>
+                        <li><a href="locations/midgard.html">Midgard</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="gods_and_giants.html">Gods and Giants</a>
+                    <ul>
+                        <li><a href="gods/odin.html">Odin</a></li>
+                        <li><a href="gods/thor.html">Thor</a></li>
+                        <li><a href="gods/loki.html">Loki</a></li>
+                        <li><a href="gods/fenrir.html">Fenrir</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="events.html">Events</a>
+                    <ul>
+                        <li><a href="events/creation.html">Creation</a></li>
+                        <li><a href="events/ragnarok.html">Ragnarok</a></li>
+                    </ul>
+                </li>
+                <li><a href="further_readings.html">Further Readings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="container">
+        <main>
+            <form action="https://webdevbasics.net/scripts/demo.php" method="post" name="feedback" id="feedback">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required="required" />
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" required="required" />
+                <label>What areas need improved?</label>
+                <span class="option">
+                    <input type="checkbox" name="improvements" id="improveVisual" value="visual" />
+                    <label>Visual Design</label><br />
+                    <input type="checkbox" name="improvements" id="improveQuality" value="quality" />
+                    <label>Article Quality</label><br />
+                    <input type="checkbox" name="improvements" id="improveQuantity" value="quantity" />
+                    <label>Article Quantity</label><br />
+                    <input type="checkbox" name="improvements" id="improveOther" value="other" />
+                    <label>Other (specify in comments)</label><br />
+                </span>
+                <label>What stories are your favorite?</label>
+                <span class="option">
+                    <input type="radio" name="favorite" id="favoriteLocation" value="location" />
+                    <label>Locations</label><br />
+                    <input type="radio" name="favorite" id="favoriteGod" value="god" />
+                    <label>Gods and Giants</label><br />
+                    <input type="radio" name="favorite" id="favoriteEvent" value="event" />
+                    <label>Events</label><br />
+                </span>
+                <label for="like">How much do you like the website?</label>
+                <span class="option">
+                    Hate <input type="range" min="1" max="100" name="like" id="like"> Love
+                </span>
+                <label for="comments">Other Comments:</label>
+                <textarea name="comments" id="comments" rows="3"></textarea>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                <div id="formimage">
+                    <p>Thanks for Visiting!</p>
+                    <img src="images/heimdall.png" alt="Heimdall">
+                    <aside>Emil Doepler, Public domain, via Wikimedia Commons</aside>
+                </div>
+            </form>
+            <br class="clear" />
+        </main>
+        <footer>
+            <hr /><br />
+            Copyright &copy; 2020 Readings from Midgard<br />
+            Author: Avery W. Harrah<br />
+            Last Updated: November 29th, 2020<br />
+            Contact: <a href="mailto:harrahawofficial@gmail.com">harrahawofficial@gmail.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>
